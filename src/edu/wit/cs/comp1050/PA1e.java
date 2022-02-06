@@ -1,5 +1,5 @@
 package edu.wit.cs.comp1050;
-
+import java.util.Scanner;
 //TODO: document this class
 public class PA1e {
 	
@@ -11,12 +11,33 @@ public class PA1e {
 	 * @return number of upper case characters
 	 */
 	public static int numUpperCase(String s) {
-		return 0; // TODO: replace with your method implementation
-	}
-
+		  int uppercase = 0;
+	        char letter;
+	        for (int i = 0; i < s.length(); i++) {
+	            letter = s.charAt(i);
+	            if(letter >='A'&& letter<='Z') {
+	                uppercase++;
+	            }
+	        }
+	        return uppercase; // TODO: replace with your method implementation
+	    }
 	// TODO: document this method
 	public static void main(String[] args) {
 		// TODO: write your code here
-	}
+	      Scanner input = new Scanner(System.in);
 
-}
+	        System.out.printf("Enter a string: ");
+	        String word = input.nextLine();
+
+	        int UpperCase = numUpperCase(word);
+
+	        if(UpperCase !=1&&UpperCase !=0) {
+	            System.out.printf("There are %d uppercase characters in the string.%n", UpperCase);
+	        } else if (UpperCase ==0) {
+	            System.out.printf("There are no uppercase characters.%n");
+	        } else {
+	             System.out.printf("There is %d uppercase character in the string.%n", UpperCase);
+	        }
+	    }
+
+	}
