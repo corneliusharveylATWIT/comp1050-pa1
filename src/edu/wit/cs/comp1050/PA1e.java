@@ -29,14 +29,14 @@ public class PA1e {
 	        System.out.printf("Enter a string: ");
 	        String word = input.nextLine();
 
-	        int UpperCase = numUpperCase(word);
+	        int uperCase = numUpperCase(word);
 
-	        if(UpperCase !=1&&UpperCase !=0) {
-	            System.out.printf("There are %d uppercase characters in the string.%n", UpperCase);
-	        } else if (UpperCase ==0) {
+	        if(uperCase !=1&&uperCase !=0) {
+	            System.out.printf("There are %d uppercase characters in the string.%n", uperCase);
+	        } else if (uperCase ==0) {
 	            System.out.printf("There are no uppercase characters.%n");
 	        } else {
-	             System.out.printf("There is %d uppercase character in the string.%n", UpperCase);
+	             System.out.printf("There is %d uppercase character in the string.%n", uperCase);
 	        }
 	    }
 

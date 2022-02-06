@@ -33,14 +33,14 @@ public class PA1d {
         Scanner input = new Scanner(System.in);
 
         System.out.printf("Enter package weight: ");
-        double PackageWeight = input.nextDouble();
+        double packageWeight = input.nextDouble();
 
-        if(PackageWeight <=0 || PackageWeight > 20) {
+        if(packageWeight <=0 || packageWeight > 20) {
             System.out.printf("%s%n", ERR_MSG);
             System.exit(0);
         }
 
-        double cost = shippingCost(PackageWeight);
+        double cost = shippingCost(packageWeight);
 
         System.out.printf("It will cost $%.2f to ship this package.%n", cost);
 

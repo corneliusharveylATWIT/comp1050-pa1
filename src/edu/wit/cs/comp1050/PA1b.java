@@ -13,7 +13,7 @@ public class PA1b {
 		// TODO: write your code here
 		Scanner input = new Scanner(System.in);
         double total;
-        double quarters, dimes, nickels, Pennies;
+        double quarters, dimes, nickels, pennies;
         System.out.printf("Enter number of quarters: ");
         quarters = input.nextDouble();
         System.out.printf("Enter number of dimes: ");
@@ -21,18 +21,18 @@ public class PA1b {
         System.out.printf("Enter number of nickels: ");
         nickels = input.nextDouble();
         System.out.printf("Enter number of pennies: ");
-        Pennies = input.nextDouble();
+        pennies = input.nextDouble();
         
-        if (quarters < 0 || dimes < 0 || nickels < 0 || Pennies < 0) {
+        if (quarters < 0 || dimes < 0 || nickels < 0 || pennies < 0) {
             System.out.printf("All coin counts must be non-negative!%n");
             System.exit(0);
         }
         quarters = quarters*.25;
         dimes = dimes*.10;
         nickels = nickels* .05;
-        Pennies = Pennies*.01;
+        pennies = pennies*.01;
 
-        total= quarters+dimes+nickels+Pennies;
+        total= quarters+dimes+nickels+pennies;
 
         System.out.printf("You have $%.2f in coins.%n", total);
 	}

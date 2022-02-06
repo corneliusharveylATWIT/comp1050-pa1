@@ -32,7 +32,7 @@ public class PA1c {
 	            System.exit(0);
 	        }
 	        int wholeTotal = convertToInt(total);
-	        int quarters,dimes,nickels,Pennies;
+	        int quarters,dimes,nickels,pennies;
 
 	        quarters = wholeTotal/25;
 	        int leftover = wholeTotal % 25;
@@ -43,7 +43,7 @@ public class PA1c {
 	        nickels = leftover2/5;
 	        int leftover3 = leftover2 % 5;
 
-	        Pennies = leftover3/1;
+	        pennies = leftover3/1;
 	        
 	        String qs = "";
 	        String ds = "";
@@ -58,10 +58,10 @@ public class PA1c {
 	        if (nickels != 1) {
 	            ns = "s";
 	        }
-	        if (Pennies != 1) {
+	        if (pennies != 1) {
 	            ps = "ies";
 	        }
-	        System.out.printf("$You have %d quarter%s, %d dime%s, %d nickel%s, and %d penn%s.%n", quarters, qs, dimes, ds, nickels, ns, Pennies, ps);
+	        System.out.printf("$You have %d quarter%s, %d dime%s, %d nickel%s, and %d penn%s.%n", quarters, qs, dimes, ds, nickels, ns, pennies, ps);
 	}
 
 }
