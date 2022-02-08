@@ -44,7 +44,7 @@ public class PA1c {
 	        int leftover3 = leftover2 % 5;
 
 	        pennies = leftover3/1;
-	        
+	        // Delete
 	        String qs = "";
 	        String ds = "";
 	        String ns = "";
