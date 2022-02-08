@@ -31,7 +31,7 @@ public class PA1b {
         dimes = dimes*.10;
         nickels = nickels* .05;
         pennies = pennies*.01;
-
+//hi
         total= quarters+dimes+nickels+pennies;
 
         System.out.printf("You have $%.2f in coins.%n", total);

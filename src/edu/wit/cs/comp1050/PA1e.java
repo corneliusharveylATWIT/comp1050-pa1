@@ -30,7 +30,7 @@ public class PA1e {
 	        String word = input.nextLine();
 
 	        int uperCase = numUpperCase(word);
-
+//hi
 	        if(uperCase !=1&&uperCase !=0) {
 	            System.out.printf("There are %d uppercase characters in the string.%n", uperCase);
 	        } else if (uperCase ==0) {

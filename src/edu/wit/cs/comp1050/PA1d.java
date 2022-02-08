@@ -34,7 +34,7 @@ public class PA1d {
 
         System.out.printf("Enter package weight: ");
         double packageWeight = input.nextDouble();
-
+//hi
         if(packageWeight <=0 || packageWeight > 20) {
             System.out.printf("%s%n", ERR_MSG);
             System.exit(0);
